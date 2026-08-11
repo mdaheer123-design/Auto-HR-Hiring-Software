@@ -10,11 +10,11 @@ set "PROJECT_DIR=%~dp0"
 
 :: Start Backend
 echo [1/2] Starting Backend Server (Uvicorn on port 56060)...
-start "Friday HR Backend" cmd /k "cd /d %PROJECT_DIR%backend && python main.py"
+start "Friday HR Backend" cmd /k "cd /d "%PROJECT_DIR%backend" && python main.py"
 
 :: Start Frontend
 echo [2/2] Starting Frontend Dev Server (Vite on port 5173)...
-start "Friday HR Frontend" cmd /k "cd /d %PROJECT_DIR%frontend && npm run dev"
+start "Friday HR Frontend" cmd /k "cd /d "%PROJECT_DIR%frontend" && npm.cmd run dev"
 
 echo.
 echo ===================================================
@@ -31,3 +31,4 @@ timeout /t 3 /nobreak >nul
 start http://localhost:5173
 
 pause
+
