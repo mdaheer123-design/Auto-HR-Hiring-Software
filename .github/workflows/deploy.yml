@@ -1,7 +1,0 @@
-# GitHub Actions workflow disabled — deploying to Render instead
-# To re-enable, rename this file back to deploy.yml
-
-name: Deploy to GitHub Pages (disabled)
-
-on:
-  workflow_dispatch:  # Manual trigger only — won't run on push
